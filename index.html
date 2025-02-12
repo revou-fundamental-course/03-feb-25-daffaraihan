@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Konversi Suhu</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" type="image/x-icon" href="./img/temperature.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <div class="hero"></div>
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="./img/background.mp4" type="video/mp4">
+        </video>
+  </div>
+
+</head>
+
+
+<body>
+  <main>
+    <section>
+        <header>
+            <div class="header">
+                 <h1 style="animation-duration: 300ms;">Temperature Conversion</h1>
+             </div>
+       </header>
+      <div class="form">
+        <div class="input-group">
+          <div class="reverse">
+            <label for="celcius">Celcius (&deg;C)</label>
+            <button>REVERSE</button>
+                </div>
+                <input placeholder="0" type="number" name="celcius" id="celcius">
+                <span id="error">Masukkan temperature !</span>
+            </div>
+            
+            <div class="input-group">
+                <label for="fahrenheit">Fahrenheit (&deg;F)</label>
+                <input disabled placeholder="0" type="number" name="fahrenheit" id="fahrenheit">
+         </div>
+         <div class="click-group">
+          <button class="shadow">RESET</button>
+          <button class="shadow">CONVERT</button>
+         </div>
+         </div>
+         <div class="description">
+         <p>Cara Kalkulasi</p>
+         <div class="method">
+          <span>𝑆<sub>(&deg;F)</sub> = </span>
+          <span id="method-value">𝑆<sub>(&deg;C)</sub> x 9/5 + 32</span>
+         </div>
+      </div>
+      <div class="explanation">
+            <p>Cara konversi suhu dari Celcius (&deg;C) ke Fahrenheit (&deg;F)</p>
+            <div class="explanation-content">
+                <p>Suhu 𝑆 dalam derajat Fahrenheit (&deg;F) sama dengan suhu 𝑆 in dalam derajat Celcius (&deg;C)
+                kali 9/5 tambah 32</p>
+            <div class="formula">
+                <p>𝑆<sub>(&deg;F)</sub> = 𝑆<sub>(&deg;C)</sub> x 9/5 + 32</p>
+                <p>atau</p>
+                <p>𝑆<sub>(&deg;F)</sub> = (𝑆<sub>(&deg;C)</sub> x 1.8) + 32</p>
+          </div>
+        </div>
+      </div>
+    <footer>
+        <div class="footer">
+          <p>Created by Daffa raihan</p>  
+        </div>
+     </footer>
+    </section>
+  </main>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
