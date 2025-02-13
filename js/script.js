@@ -95,3 +95,16 @@ document.addEventListener("DOMContentLoaded", function () {
     fahrenheitInput.style.backgroundColor = "var(--darker--quaternary-color)";
     fahrenheitInput.style.cursor = "not-allowed";
   });
+  // Adding keypress event listener to the password input
+  document.getElementById("celcius").addEventListener("keypress", function (event) {
+    if (event.keyCode === 13) {
+        // Triggering click event on button when Enter key is pressed
+        document.getElementById("convertbtn").click();
+    }
+});
+
+// Adding click event listener to the button
+document.getElementById("convertbtn").addEventListener("click", function () {
+    document.getElementById("celcius").innerHTML = 
+      "Button clicked after ENTER button is pressed";
+});
